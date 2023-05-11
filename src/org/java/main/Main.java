@@ -21,5 +21,14 @@ public class Main {
 			
 			System.out.println(a);
 		}
+		
+		System.out.println("\n-----------------\n");
+		
+		AnimalManager m1 = new AnimalManager();
+		
+		System.out.println("Pettirosso: " + m1.letFly(sparrow));
+		System.out.println("Aquila: " + m1.letFly(eagle));
+		System.out.println("Delfino: " + m1.letSwim(dolphin));
+		
 	}
 }
