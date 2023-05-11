@@ -1,8 +1,9 @@
 package org.java.obj;
 
+import org.java.inter.FlyingAnimal;
 import org.java.obj.abs.Animal;
 
-public class Sparrow extends Animal {
+public class Sparrow extends Animal implements FlyingAnimal {
 	@Override
 	public String verse() {
 		return "Verso del pettirosso";
@@ -14,9 +15,16 @@ public class Sparrow extends Animal {
 	}
 	
 	@Override
+	public String fly() {
+		return "Sto volando...";
+	}
+	
+	@Override
 	public String toString() {
 		return "[Pettirosso]" + verse()
 				+ "\nmangia: " + eat()
-				+ "\ndorme: " + sleep();
+				+ "\ndorme: " + sleep()
+				+ "\nazione: " + fly();
 	}
+
 }

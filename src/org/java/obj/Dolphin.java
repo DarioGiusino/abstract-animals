@@ -1,8 +1,9 @@
 package org.java.obj;
 
+import org.java.inter.SwimmingAnimal;
 import org.java.obj.abs.Animal;
 
-public class Dolphin extends Animal {
+public class Dolphin extends Animal implements SwimmingAnimal {
 	@Override
 	public String verse() {
 		return "Verso del delfino";
@@ -14,9 +15,17 @@ public class Dolphin extends Animal {
 	}
 	
 	@Override
+	public String swim() {
+		return "Sto nuotando...";
+	}
+	
+	@Override
 	public String toString() {
 		return "[Delfino]" + verse()
 				+ "\nmangia: " + eat()
-				+ "\ndorme: " + sleep();
+				+ "\ndorme: " + sleep()
+				+ "\nazione: " + swim();
 	}
+
+
 }
