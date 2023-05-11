@@ -5,11 +5,11 @@ import org.java.inter.SwimmingAnimal;
 
 public class AnimalManager{
 
-	public String letFly(Object obj) {
-		return ((FlyingAnimal) obj).fly();
+	public String letFly(FlyingAnimal obj) {
+		return obj.fly();
 	}
 	
-	public String letSwim(Object obj) {
-		return ((SwimmingAnimal) obj).swim();
+	public String letSwim(SwimmingAnimal obj) {
+		return obj.swim();
 	}
 }
